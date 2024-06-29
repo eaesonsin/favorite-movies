@@ -1,0 +1,104 @@
+body {
+    background-image: url('Aftersun1.jpg');
+    background-size: cover; /* Ensure the background covers the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    color: #000; /* Black text */
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    background-color: transparent; /* Transparent background for the container */
+    width: 800px;
+    margin: 100px auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.movie-list-title {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.inner-wrapper {
+    margin: 0 auto;
+    max-width: 500px; /* 標題到下面電影名的寬度 */
+    width: 100%;
+}
+
+.input-wrapper {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background for input wrapper */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; 
+    max-width: 500px;  /* 中間半透明白框的寬度 */
+    padding: 10px;
+}
+
+.input-wrapper input {
+    background-color: transparent;
+    border: 0px;
+    flex: 1;
+    outline: none;
+    padding: 10px 20px;
+    color: #000; /* Black text for input */
+}
+
+.input-wrapper button {
+    background-color: transparent; /* Transparent background for the container */
+    border: 0px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 10px 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.list {
+    list-style: none;
+    padding: 0px;
+}
+
+.list li {
+    vertical-align: middle;
+    font-weight: 400;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list li img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.delete {
+    background-image: url('assets/delete.svg');
+    border-radius: 25px;
+    padding: 5px;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.delete:hover {
+    background-color: #EEEFF0;
+    cursor: pointer;
+}
